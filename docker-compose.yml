@@ -3,9 +3,12 @@ version: "3.8"
 services:
   nextcloud:
     image: nextcloud-local:latest
+    user: www-data
     build:
       context: .
       dockerfile: Dockerfile
     hostname: nextcloud.home.arpa
+    volumes:
+      - ./nextcloud_data:/var/www/html
     ports:
       - 8000:80
