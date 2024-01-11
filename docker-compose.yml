@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  nextcloud:
+    image: nextcloud-local:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: nextcloud.home.arpa
+    ports:
+      - 8000:80

@@ -1,0 +1,20 @@
+Required:
+    pdo_mysql (later)
+    pdo_pgsql (later, optional)
+
+Required for specific apps:
+    PHP module ldap (for LDAP integration)
+    PHP module smbclient (SMB/CIFS integration, see SMB/CIFS)
+    PHP module ftp (for FTP storage / external user authentication)
+    PHP module imap (for external user authentication)
+    PHP module bcmath (for passwordless login)
+    PHP module gmp (for passwordless login)
+
+Recommended for specific apps (optional):
+    PHP module gmp (for SFTP storage)
+    PHP module exif (for image rotation in pictures app)
+
+For enhanced server performance (optional) select one or more of the following caches:
+    PHP module apcu (>= 4.0.6)
+    PHP module memcached
+    PHP module redis (>= 2.2.6, required for Transactional File Locking)
